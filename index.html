@@ -1,25 +1,122 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Animal Shelter</title>
+		<title></title>
 	</head>
- <body>
-	<header class="main-header">
-		<nav class="main-navigation">
-			<h1> Cozy House</h1>
-			<p>Shelter for pets in Tallinn</p>
-			<ul class="site-navigation">
-				<li><a href="info.html">About the shelter</a></li>
-				<li><a href="catalog.html">Our pets</a></li>
-				<li><a href="news.html">To help the shelter</a></li>
-				<li><a href="contacts.html">Contacts</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main class="container">
-		<h2 class="visually-hidden"> Not only people need a house</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida est in porttitor porttitor. Duis sodales elementum ipsum, vehicula condimentum erat fringilla et.</p>
-	   <a class="button" href="#">Make a friend</a>
-</body>
+	<body>
+		<header class="main-header">
+			<nav class="main-navigation">
+				<a class="main-header-logo" href="index.html">
+					<img src="img/logo.svg" width="111" height="24" alt="logo barbershop borodinski">
+				</a>
+				<ul class="site-navigation">
+					<li><a href="info.html">Info</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="price.html">Price</a></li>
+					<li><a href="catalog.html">Shop</a></li>
+					<li><a href="contacts.html">Contacts</a></li>
+				</ul>
+				<ul class="user-navigation">
+					<li class="login-link">Input</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="conteiner"> 
+			<h1 class="visually-hidden">Barbershop Borodinski</h1>
+			
+			<section class="features">
+				<h2 class="visually-hidden">Features</h2>
+				 <ul class="features-list">
+					 <li class="feature-item">
+					 <h3>Fast</h3>
+					 <p> We do our work fast! Two hours will fly and you are the lucky winner of a stylish hairstyle for a minute!</p>
+					 </li>
+					 <li class="feature-item">
+					 <h3>Cool</h3>
+					 <p>Forget how you cut your hair before. We will make you a football or movie star! In any case, externally.</p>
+					 </li>
+					 <li class="feature-item">
+					 <h3>Expensive</h3>
+					 <p>Our masters are professionals in their field and cannot be cheap. Besides, does the price not give a certain status?</p>
+					 </li>
+				</ul>
+			</section>
+			
+			<section class="news">
+				<h2>News</h2>
+				<ul class="news-list">
+					   <li class="news-item">
+					   <p>The Jagermaister was finally brought to us! Now you can skip a cup while cutting.</p>
+					  <time datetime="2019-11-12">November 12</time>
+					   </li>
+					   <li class="news-item">
+					   <p>In our team replenishment Boris "Razor" Borisow, the owner of many ranks and awards replenished our harmonious ranks.</p>
+					   <time datetime="2019-11-20">November 20</time>
+					   </li>
+				</ul>
+				<a class="button" href="news.html">All news</a>
+			</section>
+			
+			<section class="gallery">
+				<h2>Photo gallery</h2>
+				<figure class="gallery-content">
+				 <a href="#"><img src="img/studio.jpg" width="286" height="164" alt="interior"></a>
+				</figure>
+				<span class="button gallery-button gallery-button-back">Back</span>
+				<span class="button gallery-button gallery-button-next">Next</span>
+				</section>
+				
+				<section class="contacts">
+					<h2>Contact Info</h2>
+					<p>
+						Barbershop Borodinski<br>
+						Address: St.Peterburg, B.Konyushennaya,19
+						Phone: +7(812)098-76-54
+					</p>
+					<p>
+						Working hours<br>
+						Mon-Fri 10:00 a.m 22:00 p.m
+						Sat-Sun 10:00 a.m 19:00 p.m
+					</p>
+				</section>
+				
+				<section class="appointment">
+					<h2>Sing up</h2>
+					<p class="appointment-info">Indicate the desired date and time and we will contact you to confirm the reservation</p>
+					<!----здесь будет форма--->  
+		</main>
+		<footer class="main-footer">
+			 <p class="footer-contacts">
+				 Barbershope "Borodinski"<br>
+				 Address: St.Peterburg, B.Konyushennaya, 19<br>
+				 <a href="map.html">How to find us</a><br>
+				 Phone: +7(812)098-76-54
+			 </p>
+			 <div class="footer-sociable">
+				 <b>Let's be friends</b>
+				 <ul>
+				<li><a class="sociable-button" href="#">Vk</a></li>
+				 <li><a class="sociable-button" href="#">Facebook</a></li>
+				 <li><a class="sociable-button" href="#">Instagram</a></li>
+				 </ul>
+			</div>
+			<p class="footer-copyring">
+				<b>Developed by</b>
+				<a class="button" href="#">G.V.D</a>
+			</p>
+		</footer>
+		
+		<section class="modal modal-login">
+			<h2>Personal Area</h2>
+			<p>Enter your username and password</p>
+			<!----здесь форма---->
+			<span class="modal-close">x</span> 
+		</section>
+		
+		<section class="modal modal-map">
+			<h2 class="visually-hidden">How to get to us</h2>
+			<span class="modal-close">x</span>
+		</section>
+	</body>
 </html>
