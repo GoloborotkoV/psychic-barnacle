@@ -15,6 +15,8 @@
 				<a class="main-header-logo" href="index.html">
 					<img src="img/index-logo.svg" width="368" height="153" alt="logo barbershop borodinski">
 				</a>
+				<div class="main-navigation-wrapper">
+					<div class="container">
 				<ul class="site-navigation">
 					<li><a href="info.html">Info</a></li>
 					<li><a href="news.html">News</a></li>
@@ -29,7 +31,9 @@
 				</ul>
 			</nav>
 		</header>
-		<main class="conteiner"> 
+		
+		<main>
+			<div class="conteiner"> 
 			<h1 class="visually-hidden">Barbershop Borodinski</h1>
 			
 			<section class="features">
@@ -68,27 +72,31 @@
 			
 			<section class="gallery">
 				<h2>Photo gallery</h2>
+				<div class="gallery-content">
 				<figure class="gallery-content">
 				 <a href="#"><img src="img/studio.jpg" width="286" height="164" alt="interior"></a>
 				</figure>
 				<button class="button gallery-button gallery-button-back" type="button">Back</button>
 				<button class="button gallery-button gallery-button-next" type="button">Next</button>
+				</div>
 				</section>
 			</div>
 				
 				<div class="index-colums">
 				<section class="contacts">
 					<h2>Contact Info</h2>
-					<p>
+					<address class="contacts-address">
 						Barbershop Borodinski<br>
 						Address: St.Peterburg, B.Konyushennaya,19
-						Phone: +7(812)098-76-54
-					</p>
+						Phone: <a href="+7(812)098-76-54">+7(812)098-76-54</a>
+					</address>
 					<p>
 						Working hours<br>
 						Mon-Fri 10:00 a.m 22:00 p.m
 						Sat-Sun 10:00 a.m 19:00 p.m
 					</p>
+					<a class="button contacts-button-map" href="map.html">How to get to</a>
+					<a class="button" href="contacts.html">Feedback</a>
 				</section>
 			
 				
@@ -116,16 +124,19 @@
 					</form>
 				</section>
 				</div>
-				
-			<div class="index-colums">
+			</div>
+			
 		</main>
-		<footer class="main-footer">
-			 <p class="footer-contacts">
+			
+            <footer class="main-footer">
+			 <div class="main-footer">
+				 <address class="footer-address">
 				 Barbershope "Borodinski"<br>
 				 Address: St.Peterburg, B.Konyushennaya, 19<br>
 				 <a href="map.html">How to find us</a><br>
-				 Phone: +7(812)098-76-54
-			 </p>
+				 Phone:<a href="+7(812)098-76-54">+7(812)098-76-54</a>
+				 </address>
+				 
 			 <div class="footer-sociable">
 				 <b>Let's be friends</b>
 				 <ul>
@@ -134,12 +145,15 @@
 				 <li><a class="sociable-button" href="#">Instagram</a></li>
 				 </ul>
 			</div>
-			<p class="footer-copyring">
+			
+			<div class="footer-copyring">
 				<b>Developed by</b>
 				<a class="button" href="#">G.V.D</a>
-			</p>
+			</div>
+			</div>
+			
 		</footer>
-		</div>
+		
 		
 		<section class="modal modal-login">
 			<h2>Personal Area</h2>
@@ -153,7 +167,7 @@
 					<label class="visually-hidden" for="user-password">Password</label>
 					<input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Password">
 				</p>
-				<p class="login-password-info">
+				<p class="login-help">
 					<label class="login-checkbox">
 				<input type="checkbox" name="remember" class="visually-hidden">
 				<span class="checkdox-indicator"></span>
@@ -169,9 +183,9 @@
 		<section class="modal modal-map">
 			<h2 class="visually-hidden">How to get to us</h2>
 			<p>
-				<img src="img/map.jpg" width="780" height="560" alt="company office">
+			<img src="img/map.jpg" width="780" height="560" alt="company office">
 			</p>
-			<button class="modal-close" type="button">Close</button>
+			<button class="modal-close" type="button"><span class="visually-hidden">Close</span></button>
 		</section>
 	</body>
 </html>
