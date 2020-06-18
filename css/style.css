@@ -970,47 +970,250 @@ input[type="radio"].visually-hidden {
 	padding-right: 80px;
 }
 
+
+
+
 .main-footer {
 	color: #ffffff;
-	
+	margin-top: 65px;
+	padding: 60px 0;
 	background-color: #212121;
 	background-image: url("img/bg-footer.jpg");
 	background-position: 0 0;
 	background-repeat: repeat;
 }
 
-.footer-contacts a {
+.inner-page .main-footer {
+	margin-top: 50px;
+}
+
+.main-footer .container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.footer-address {
+	margin-right: 60px;
+	width: 320px;
+	font-style: normal;
+}
+
+.footer-address a {
 	color: #ffffff;
+}
+
+.footer-address a:first-of-type {
 	text-decoration: underline;
 }
- 
- .footer-contacts a:hover,
- .footer-contacts a:focus {
-	text-decoration: none; 
- }
- 
- .footer-social {
-	 text-align: center;
- }
- 
- .footer-social ul  {
-	 list-style: none;
- }
- 
- .social-button {
-	 color: #ffffff;
- }  
+
+.footer-address a:first-of-type:hover,
+.footer-address a:first-of-type:focus {
+	text-decoration: none;
+}
+
+.footer-social {
+	width: 180px;
+	text-align: center;
+}
+
+.footer-social b {
+	display: block;
+	margin-bottom: 15px;
+}
+
+.footer-social ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 0;
+	width: 141px;
+	list-style: none;
+}
+
+.social-button {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	width: 43px;
+	height: 43px;
+	background-color: #000000;
+}
+
+.social-button:hover,
+.social-button:focus {
+	background-color: #ffffff;
+}
+
+.social-button:hover path,
+.social-button:focus path {
+	fill: #000000;
+}
+
+.footer-copyring {
+	margin-left: auto;
+	width: 145px;
+	text-align: center;
+}
+
+.footer-copyring b {
+	display: block;
+	margin-bottom: 15px;
+}
+
+.footer-copyring .button {
+	display: block;
+	margin-right: 0;
+}
 
 .footer-copyright .button:hover,
 .footer-copyright .button:focus {
 	color: #000000;
-	
 	background-color: #ffffff;
+}
+
+@-webkit-keyframes bonus {
+	0% {
+		-webkit-transform:translateY(-2000px);
+		transform: translateY(-2000px);
+	}
+	70% {
+		-webkit-transform: translateY(30px);
+		transform: translateY(30px);
+	}
+	90% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+@keyframes bonus {
+	0% {
+		-webkit-transform: translateY(-2000px);
+		transform: translateY(-2000px);
+	}
+	70% {
+		-webkit-transform: translateY(30px);
+		transform: translateY(30px);
+	}
+	90% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateX(0);
+		}
+}
+
+@keyframes bounse {
+	0% {
+		-webkit-transform: translateY(-2000px);
+		transform: translateY(-2000px);
+	}
+	70% {
+		-webkit-transform: translateY(30px);
+		transform: translateY(30px);
+	}
+	90% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+@-webkit-keyframes shake {
+	0%,
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		-webkit-transform: translateX(-10px);
+		transform: translateX(-10px);
+	}
+	20%,
+	40%,
+	60%,
+	80% {
+		-webkit-transform: translateX(10px);
+		transform: translateX(10px);
+	}
+}
+
+@keyframes shake {
+	0%,
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		-webkit-transform: translateX(-10px);
+		transform: translateX(-10px);
+	}
+	20%,
+	40%,
+	60%,
+	80% {
+		-webkit-transform: translateX(10px);
+		transform: translateX(10px);
+	}
+}
+
+@keyframes shake {
+	0%,
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		-webkit-transform: translateX(-10px);
+		transform: translateX(10px);
+	}
+	20%,
+	40%,
+	60%,
+	80% {
+		-webkit-transform: translateX(10px);
+		transform: translateX(10px);
+	}
 }
 
 .modal{ 
 	color: #000000;
-	
+	display: none;
+	position: fixed;
 	background-color: #f8f3f0;
 	background-image: url("img/bg-index-content.jpg");
 	background-position: 0 0;
@@ -1018,16 +1221,111 @@ input[type="radio"].visually-hidden {
 }
 
 .modal h2 {
+	margin: 0;
+	margin-bottom: 20px;
 	font-size: 30px;
 	line-height: 42px;
 }
+
+.modal-description {
+	margin: 0;
+	margin-bottom: 10px;
+}
  
- .login-form input[type="text"],
+ .modal-login {
+	 top: 120px;
+	 left: 50px;
+	 margin-left: -230px;
+	 padding: 50px 80px;
+	 width: 300px;
+	 -webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+	 box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+ }
+ 
+ .modal-map {
+	 top: 50%;
+	 left: 50%;
+	 margin-left: -390px;
+	 margin-top: -287px;
+	 width: 780px;
+	 height: 547px;
+	 border: 7px solid white;
+ }
+ 
+ .modal-map iframe {
+	 position: relative;
+	 z-index: 2;
+	 border: none;
+ }
+ 
+ .modal-map img {
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 z-index: 1;
+	 margin: 0;
+ }
+ 
+ .modal-close {
+	 position: absolute;
+	 top: 0;
+	 right: -33px;
+	 width: 19px;
+	 height: 19px;
+	 background-color: transparent;
+	 border: 0;
+	 cursor: pointer;
+ }
+ 
+.modal-close::before,
+.modal-close::after {
+	content: "";
+	position: absolute;
+	top: 8px;
+	left: 0;
+	width: 19px;
+	height: 3px;
+	background-color: #d0d0d0;
+}
+
+.modal-closed::before {
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.modal-closed::after {
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.modal-show {
+	display: block;
+	-webkit-animation: bounce 0.6s;
+	animation: bounce 0.6s;
+}
+
+.modal-error {
+	-webkit-animation: shake 0.6s;
+	animation: shake 0.6s;
+}
+
+.login-form p {
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.login-form input[type="text"],
  .login-form input[type="password"] {
 	 font: inherit:
 	 color: #000000;
 	 text-transform: uppercase;
-	 
+	 -webkit-box-sizing: border-box;
+	 box-sizing: border-box;
+	 padding: 10px 15px;
+	 padding-right: 40px;
+	 width: 100%;
 	 background-color: #f9f6f3;
 	 border: 2px solid #000000;
  }
@@ -1036,31 +1334,92 @@ input[type="radio"].visually-hidden {
 	border-color: #663d15;
 }
 
+.login-icon-user {
+	background-image: url("img/user.svg");
+	background-position: 270px center;
+	background-repeat: no-repeat;
+}
+
+.login-icon-password {
+	background-image: url("img/lock.svg");
+	background-position: 270px center;
+	background-repeat: no-repeat;
+}
+
 .login-checkbox:hover,
 .login-checkbox:focus {
 	color: #663d15;
 }
 
-.restore {
+.login-form .restore {
 	color: #000000;
 	text-decoration: underline;
 }
 
-.restore:hover,
-.restore:focus {
+.login-form .restore:hover,
+.login-form .restore:focus {
 	text-decoration: none;
 }
 
+.login-form .login-help {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	margin: 15px 0px;	
+}
 
+.login-checkbox {
+	position: relative;
+	padding-left: 30px;
+	cursor: pointer;
+}
 
+.login-checkbox input [type="checkbox"]+.checkbox-indicator {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 18px;
+	height: 18px; 
+	border: 2px solid #000000;
+}
 
+.login-checkbox input [type="checkbox"]:focus+.checkbox-indicator {
+	border-color: #663d15;
+	outline: thin dotted;
+}
 
+.login-checkbox input[type="checkbox"]:checked+.checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked+.checkbox-indicator::after {
+	content: "";
+	position: absolute;
+	top: 8px;
+	left: 1px;
+	width: 16px;
+	height: 2px;
+	background-color: #000000;
+}
 
+.login-checkbox input [type="checkbox"]:checked+.checkbox-indicator::before {
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
 
+.login-checkbox input[type="checkbox"]:checked+.checkbox-indicator::after {
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(45deg);
+}
 
-
-
-
+.login-form .button {
+	width: 100%;
+	margin-right: 0;
+}
 
 
 
