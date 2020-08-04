@@ -1,4 +1,5 @@
 body{
+	min-width: 960px;
 	margin: 0;
 	padding: 0;
 	font-family: "PT Sans Narrow", Arial, sans-serif;
@@ -348,8 +349,8 @@ login-link:active::before {
 }
 
 .gallery-button {
-	position: absolute;
-	bottom: 0;
+	position: static;
+	bottom: 40;
 	margin: 0;
 	width: 140px;
 	box-sizing: border-box;
@@ -1422,6 +1423,24 @@ login-link:active::before {
 	width: 100%;
 	margin-right: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
