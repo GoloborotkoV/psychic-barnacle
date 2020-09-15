@@ -1,4 +1,6 @@
 body{
+	min-width: 1122px;
+	
 	margin: 0;
 	padding: 0;
 	
@@ -24,12 +26,24 @@ body{
 	background-repeat: repeat;
 }
 
+.inner-page .main-header{
+	margin-bottom: 50px;
+	
+	background-color: #000000;
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
 a {
 	text-decoration: none; 
 }
 
 img{
-	width: 100%;
+	max-width: 100%;
 	height: auto;
 }
 
@@ -79,11 +93,8 @@ input[type="radio"].visually-hidden {
 	background-color: #000000;
 }
 
-.container {
-	width: 940px;
-	margin: 0px auto;
-	padding: 0 10px;
-}
+
+
 
 .main-header{
 	margin-bottom: 75px;
